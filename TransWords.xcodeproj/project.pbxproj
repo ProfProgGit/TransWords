@@ -1,0 +1,928 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00021C5322F04A3A00E1B63D /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C5222F04A3A00E1B63D /* CoreDataService.swift */; };
+		00021C5C22F05E3700E1B63D /* LanguageSelectionPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C5B22F05E3700E1B63D /* LanguageSelectionPresenterImpl.swift */; };
+		00021C5E22F05E5D00E1B63D /* LanguageSelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C5D22F05E5D00E1B63D /* LanguageSelectionPresenter.swift */; };
+		00021C6022F0D23600E1B63D /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C5F22F0D23600E1B63D /* MainAssembly.swift */; };
+		00021C6222F0D3B700E1B63D /* HistoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C6122F0D3B700E1B63D /* HistoryAssembly.swift */; };
+		00021C6522F0D69000E1B63D /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C6422F0D69000E1B63D /* HistoryPresenter.swift */; };
+		00021C6722F0D6FA00E1B63D /* HistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C6622F0D6FA00E1B63D /* HistoryRouter.swift */; };
+		00021C6A22F0D76C00E1B63D /* HistoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C6922F0D76C00E1B63D /* HistoryInteractor.swift */; };
+		00021C6C22F0D7FA00E1B63D /* HistoryPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C6B22F0D7FA00E1B63D /* HistoryPresenterImpl.swift */; };
+		00021C6E22F0D81100E1B63D /* HistoryRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C6D22F0D81100E1B63D /* HistoryRouterImpl.swift */; };
+		00021C7022F0D82B00E1B63D /* HistoryInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C6F22F0D82B00E1B63D /* HistoryInteractorImpl.swift */; };
+		00021C7422F0E21B00E1B63D /* SettingsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C7322F0E21B00E1B63D /* SettingsAssembly.swift */; };
+		00021C7622F0E2D700E1B63D /* WordTranslationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C7522F0E2D700E1B63D /* WordTranslationAssembly.swift */; };
+		00021C7822F1643B00E1B63D /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C7722F1643B00E1B63D /* Word.swift */; };
+		00021C7B22F1965700E1B63D /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C7A22F1965700E1B63D /* SettingsPresenter.swift */; };
+		00021C7D22F1967800E1B63D /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C7C22F1967800E1B63D /* SettingsRouter.swift */; };
+		00021C8122F196E600E1B63D /* SettingsPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C8022F196E600E1B63D /* SettingsPresenterImpl.swift */; };
+		00021C8522F1971E00E1B63D /* SettingsRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C8422F1971E00E1B63D /* SettingsRouterImpl.swift */; };
+		00021C8822F1ADC800E1B63D /* LanguageSelectionAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C8722F1ADC800E1B63D /* LanguageSelectionAssembly.swift */; };
+		00021C8A22F1B16A00E1B63D /* LanguageSelectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C8922F1B16A00E1B63D /* LanguageSelectionInteractor.swift */; };
+		00021C8E22F1B1C400E1B63D /* LanguageSelectionInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C8D22F1B1C400E1B63D /* LanguageSelectionInteractorImpl.swift */; };
+		00021C9222F1C2E200E1B63D /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C9122F1C2E200E1B63D /* Language.swift */; };
+		00021C9422F1C4B400E1B63D /* TranslationDirectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C9322F1C4B400E1B63D /* TranslationDirectionService.swift */; };
+		00021C9722F2F91000E1B63D /* WordTranslationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C9622F2F91000E1B63D /* WordTranslationPresenter.swift */; };
+		00021C9922F2F92900E1B63D /* WordTranslationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C9822F2F92900E1B63D /* WordTranslationInteractor.swift */; };
+		00021C9D22F2F97C00E1B63D /* WordTranslationPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C9C22F2F97C00E1B63D /* WordTranslationPresenterImpl.swift */; };
+		00021C9F22F2F99600E1B63D /* WordTranslationInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021C9E22F2F99600E1B63D /* WordTranslationInteractorImpl.swift */; };
+		00021CA422F3499900E1B63D /* TranslationDirectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021CA322F3499900E1B63D /* TranslationDirectionInteractor.swift */; };
+		00021CA622F349B600E1B63D /* TranslationDirectionInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021CA522F349B600E1B63D /* TranslationDirectionInteractorImpl.swift */; };
+		00021CA822F34FA900E1B63D /* LanguageGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021CA722F34FA900E1B63D /* LanguageGroup.swift */; };
+		00021CAB22F4CABB00E1B63D /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021CAA22F4CABB00E1B63D /* Storyboard.swift */; };
+		00021CB022F4D27800E1B63D /* LanguageEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021CAC22F4D27800E1B63D /* LanguageEntity+CoreDataClass.swift */; };
+		00021CB122F4D27800E1B63D /* LanguageEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021CAD22F4D27800E1B63D /* LanguageEntity+CoreDataProperties.swift */; };
+		00021CB222F4D27800E1B63D /* TranslatedWordEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021CAE22F4D27800E1B63D /* TranslatedWordEntity+CoreDataClass.swift */; };
+		00021CB322F4D27800E1B63D /* TranslatedWordEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021CAF22F4D27800E1B63D /* TranslatedWordEntity+CoreDataProperties.swift */; };
+		00021CF422F7834400E1B63D /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021CF322F7834400E1B63D /* UINavigationController.swift */; };
+		00021CF822FA257500E1B63D /* StoryboardEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021CF722FA257500E1B63D /* StoryboardEnums.swift */; };
+		00021CFA22FAC29000E1B63D /* HistoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021CF922FAC29000E1B63D /* HistoryTableCell.swift */; };
+		00B4765422E0C68600A4C0C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4765322E0C68600A4C0C9 /* AppDelegate.swift */; };
+		00B4765922E0C68600A4C0C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B4765722E0C68600A4C0C9 /* Main.storyboard */; };
+		00B4765C22E0C68600A4C0C9 /* TransWords.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00B4765A22E0C68600A4C0C9 /* TransWords.xcdatamodeld */; };
+		00B4765E22E0C68700A4C0C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B4765D22E0C68700A4C0C9 /* Assets.xcassets */; };
+		00B4766122E0C68700A4C0C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B4765F22E0C68700A4C0C9 /* LaunchScreen.storyboard */; };
+		00B4766C22E0C68700A4C0C9 /* TransWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4766B22E0C68700A4C0C9 /* TransWordsTests.swift */; };
+		00B4767722E0C68700A4C0C9 /* TransWordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4767622E0C68700A4C0C9 /* TransWordsUITests.swift */; };
+		00B4769822E5D8C600A4C0C9 /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4769722E5D8C600A4C0C9 /* TranslationService.swift */; };
+		00B4769A22E5D94900A4C0C9 /* YandexTranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4769922E5D94900A4C0C9 /* YandexTranslationService.swift */; };
+		00B4769E22E886A300A4C0C9 /* YandexResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4769D22E886A300A4C0C9 /* YandexResponse.swift */; };
+		00B476AC22EACC9900A4C0C9 /* WordTranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B476AB22EACC9900A4C0C9 /* WordTranslationViewController.swift */; };
+		00B476AE22EB7B1300A4C0C9 /* CoreDataServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B476AD22EB7B1300A4C0C9 /* CoreDataServiceImpl.swift */; };
+		00B476B022EBA00C00A4C0C9 /* TranslationDirectionServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B476AF22EBA00C00A4C0C9 /* TranslationDirectionServiceImpl.swift */; };
+		00B476B222EBA0A200A4C0C9 /* TranslationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B476B122EBA0A200A4C0C9 /* TranslationDirection.swift */; };
+		00B476C922EC2D1F00A4C0C9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B476C822EC2D1F00A4C0C9 /* SettingsViewController.swift */; };
+		00B476CB22EC861000A4C0C9 /* LanguageSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B476CA22EC861000A4C0C9 /* LanguageSelectionViewController.swift */; };
+		00D0013722ED9DFD00A15870 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D0013622ED9DFD00A15870 /* HistoryViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00B4766822E0C68700A4C0C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B4764822E0C68600A4C0C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00B4764F22E0C68600A4C0C9;
+			remoteInfo = TransWords;
+		};
+		00B4767322E0C68700A4C0C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B4764822E0C68600A4C0C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00B4764F22E0C68600A4C0C9;
+			remoteInfo = TransWords;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00021C5222F04A3A00E1B63D /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		00021C5B22F05E3700E1B63D /* LanguageSelectionPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectionPresenterImpl.swift; sourceTree = "<group>"; };
+		00021C5D22F05E5D00E1B63D /* LanguageSelectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectionPresenter.swift; sourceTree = "<group>"; };
+		00021C5F22F0D23600E1B63D /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
+		00021C6122F0D3B700E1B63D /* HistoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryAssembly.swift; sourceTree = "<group>"; };
+		00021C6422F0D69000E1B63D /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
+		00021C6622F0D6FA00E1B63D /* HistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRouter.swift; sourceTree = "<group>"; };
+		00021C6922F0D76C00E1B63D /* HistoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInteractor.swift; sourceTree = "<group>"; };
+		00021C6B22F0D7FA00E1B63D /* HistoryPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenterImpl.swift; sourceTree = "<group>"; };
+		00021C6D22F0D81100E1B63D /* HistoryRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRouterImpl.swift; sourceTree = "<group>"; };
+		00021C6F22F0D82B00E1B63D /* HistoryInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInteractorImpl.swift; sourceTree = "<group>"; };
+		00021C7322F0E21B00E1B63D /* SettingsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAssembly.swift; sourceTree = "<group>"; };
+		00021C7522F0E2D700E1B63D /* WordTranslationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTranslationAssembly.swift; sourceTree = "<group>"; };
+		00021C7722F1643B00E1B63D /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		00021C7A22F1965700E1B63D /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		00021C7C22F1967800E1B63D /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		00021C8022F196E600E1B63D /* SettingsPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenterImpl.swift; sourceTree = "<group>"; };
+		00021C8422F1971E00E1B63D /* SettingsRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouterImpl.swift; sourceTree = "<group>"; };
+		00021C8722F1ADC800E1B63D /* LanguageSelectionAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectionAssembly.swift; sourceTree = "<group>"; };
+		00021C8922F1B16A00E1B63D /* LanguageSelectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectionInteractor.swift; sourceTree = "<group>"; };
+		00021C8D22F1B1C400E1B63D /* LanguageSelectionInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectionInteractorImpl.swift; sourceTree = "<group>"; };
+		00021C9122F1C2E200E1B63D /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		00021C9322F1C4B400E1B63D /* TranslationDirectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationDirectionService.swift; sourceTree = "<group>"; };
+		00021C9622F2F91000E1B63D /* WordTranslationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTranslationPresenter.swift; sourceTree = "<group>"; };
+		00021C9822F2F92900E1B63D /* WordTranslationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTranslationInteractor.swift; sourceTree = "<group>"; };
+		00021C9C22F2F97C00E1B63D /* WordTranslationPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTranslationPresenterImpl.swift; sourceTree = "<group>"; };
+		00021C9E22F2F99600E1B63D /* WordTranslationInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTranslationInteractorImpl.swift; sourceTree = "<group>"; };
+		00021CA322F3499900E1B63D /* TranslationDirectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationDirectionInteractor.swift; sourceTree = "<group>"; };
+		00021CA522F349B600E1B63D /* TranslationDirectionInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationDirectionInteractorImpl.swift; sourceTree = "<group>"; };
+		00021CA722F34FA900E1B63D /* LanguageGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageGroup.swift; sourceTree = "<group>"; };
+		00021CAA22F4CABB00E1B63D /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		00021CAC22F4D27800E1B63D /* LanguageEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LanguageEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		00021CAD22F4D27800E1B63D /* LanguageEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LanguageEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		00021CAE22F4D27800E1B63D /* TranslatedWordEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TranslatedWordEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		00021CAF22F4D27800E1B63D /* TranslatedWordEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TranslatedWordEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		00021CF322F7834400E1B63D /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		00021CF722FA257500E1B63D /* StoryboardEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardEnums.swift; sourceTree = "<group>"; };
+		00021CF922FAC29000E1B63D /* HistoryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableCell.swift; sourceTree = "<group>"; };
+		00B4765022E0C68600A4C0C9 /* TransWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00B4765322E0C68600A4C0C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00B4765822E0C68600A4C0C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00B4765B22E0C68600A4C0C9 /* TransWords.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TransWords.xcdatamodel; sourceTree = "<group>"; };
+		00B4765D22E0C68700A4C0C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00B4766022E0C68700A4C0C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00B4766222E0C68700A4C0C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00B4766722E0C68700A4C0C9 /* TransWordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransWordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00B4766B22E0C68700A4C0C9 /* TransWordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransWordsTests.swift; sourceTree = "<group>"; };
+		00B4766D22E0C68700A4C0C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00B4767222E0C68700A4C0C9 /* TransWordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransWordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00B4767622E0C68700A4C0C9 /* TransWordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransWordsUITests.swift; sourceTree = "<group>"; };
+		00B4767822E0C68700A4C0C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00B4769722E5D8C600A4C0C9 /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
+		00B4769922E5D94900A4C0C9 /* YandexTranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexTranslationService.swift; sourceTree = "<group>"; };
+		00B4769D22E886A300A4C0C9 /* YandexResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexResponse.swift; sourceTree = "<group>"; };
+		00B476AB22EACC9900A4C0C9 /* WordTranslationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTranslationViewController.swift; sourceTree = "<group>"; };
+		00B476AD22EB7B1300A4C0C9 /* CoreDataServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceImpl.swift; sourceTree = "<group>"; };
+		00B476AF22EBA00C00A4C0C9 /* TranslationDirectionServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationDirectionServiceImpl.swift; sourceTree = "<group>"; };
+		00B476B122EBA0A200A4C0C9 /* TranslationDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationDirection.swift; sourceTree = "<group>"; };
+		00B476C822EC2D1F00A4C0C9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		00B476CA22EC861000A4C0C9 /* LanguageSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectionViewController.swift; sourceTree = "<group>"; };
+		00D0013622ED9DFD00A15870 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00B4764D22E0C68600A4C0C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00B4766422E0C68700A4C0C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00B4766F22E0C68700A4C0C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00021C5122F0492900E1B63D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				00021C8622F198A200E1B63D /* UserDefaults */,
+				00021C7222F0DA1600E1B63D /* Network */,
+				00021C7122F0D9EB00E1B63D /* CoreData */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		00021C5522F05D4700E1B63D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				00021C5922F05DB500E1B63D /* LanguageSelection */,
+				00021C5822F05D8900E1B63D /* History */,
+				00021C5722F05D7B00E1B63D /* Settings */,
+				00021C5622F05D5200E1B63D /* WordTranslation */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		00021C5622F05D5200E1B63D /* WordTranslation */ = {
+			isa = PBXGroup;
+			children = (
+				00B476AB22EACC9900A4C0C9 /* WordTranslationViewController.swift */,
+				00021C7522F0E2D700E1B63D /* WordTranslationAssembly.swift */,
+				00021C9C22F2F97C00E1B63D /* WordTranslationPresenterImpl.swift */,
+				00021C9E22F2F99600E1B63D /* WordTranslationInteractorImpl.swift */,
+				00021C9522F2F8E100E1B63D /* Protocol */,
+			);
+			path = WordTranslation;
+			sourceTree = "<group>";
+		};
+		00021C5722F05D7B00E1B63D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				00B476C822EC2D1F00A4C0C9 /* SettingsViewController.swift */,
+				00021C7322F0E21B00E1B63D /* SettingsAssembly.swift */,
+				00021C8022F196E600E1B63D /* SettingsPresenterImpl.swift */,
+				00021C8422F1971E00E1B63D /* SettingsRouterImpl.swift */,
+				00021C7922F1963600E1B63D /* Protocol */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		00021C5822F05D8900E1B63D /* History */ = {
+			isa = PBXGroup;
+			children = (
+				00D0013622ED9DFD00A15870 /* HistoryViewController.swift */,
+				00021CF922FAC29000E1B63D /* HistoryTableCell.swift */,
+				00021C6122F0D3B700E1B63D /* HistoryAssembly.swift */,
+				00021C6B22F0D7FA00E1B63D /* HistoryPresenterImpl.swift */,
+				00021C6D22F0D81100E1B63D /* HistoryRouterImpl.swift */,
+				00021C6F22F0D82B00E1B63D /* HistoryInteractorImpl.swift */,
+				00021C6322F0D66400E1B63D /* Protocol */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		00021C5922F05DB500E1B63D /* LanguageSelection */ = {
+			isa = PBXGroup;
+			children = (
+				00B476CA22EC861000A4C0C9 /* LanguageSelectionViewController.swift */,
+				00021C5B22F05E3700E1B63D /* LanguageSelectionPresenterImpl.swift */,
+				00021C8722F1ADC800E1B63D /* LanguageSelectionAssembly.swift */,
+				00021C8D22F1B1C400E1B63D /* LanguageSelectionInteractorImpl.swift */,
+				00021C5A22F05DDE00E1B63D /* Protocol */,
+			);
+			path = LanguageSelection;
+			sourceTree = "<group>";
+		};
+		00021C5A22F05DDE00E1B63D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				00021C5D22F05E5D00E1B63D /* LanguageSelectionPresenter.swift */,
+				00021C8922F1B16A00E1B63D /* LanguageSelectionInteractor.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		00021C6322F0D66400E1B63D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				00021C6422F0D69000E1B63D /* HistoryPresenter.swift */,
+				00021C6622F0D6FA00E1B63D /* HistoryRouter.swift */,
+				00021C6922F0D76C00E1B63D /* HistoryInteractor.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		00021C7122F0D9EB00E1B63D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				00B476AD22EB7B1300A4C0C9 /* CoreDataServiceImpl.swift */,
+				00021C5222F04A3A00E1B63D /* CoreDataService.swift */,
+				00B476B322EBBAD200A4C0C9 /* CoreDataModel */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		00021C7222F0DA1600E1B63D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				00B4769722E5D8C600A4C0C9 /* TranslationService.swift */,
+				00B4769D22E886A300A4C0C9 /* YandexResponse.swift */,
+				00B4769922E5D94900A4C0C9 /* YandexTranslationService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		00021C7922F1963600E1B63D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				00021C7A22F1965700E1B63D /* SettingsPresenter.swift */,
+				00021C7C22F1967800E1B63D /* SettingsRouter.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		00021C8622F198A200E1B63D /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				00B476AF22EBA00C00A4C0C9 /* TranslationDirectionServiceImpl.swift */,
+				00021C9322F1C4B400E1B63D /* TranslationDirectionService.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		00021C9522F2F8E100E1B63D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				00021C9622F2F91000E1B63D /* WordTranslationPresenter.swift */,
+				00021C9822F2F92900E1B63D /* WordTranslationInteractor.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		00021CA222F3497700E1B63D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				00021CA322F3499900E1B63D /* TranslationDirectionInteractor.swift */,
+				00021CA522F349B600E1B63D /* TranslationDirectionInteractorImpl.swift */,
+				00021CA722F34FA900E1B63D /* LanguageGroup.swift */,
+				00021CF722FA257500E1B63D /* StoryboardEnums.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		00021CA922F4CA8100E1B63D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				00021CAA22F4CABB00E1B63D /* Storyboard.swift */,
+				00021CF322F7834400E1B63D /* UINavigationController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		00B4764722E0C68600A4C0C9 = {
+			isa = PBXGroup;
+			children = (
+				00B4765222E0C68600A4C0C9 /* TransWords */,
+				00B4766A22E0C68700A4C0C9 /* TransWordsTests */,
+				00B4767522E0C68700A4C0C9 /* TransWordsUITests */,
+				00B4765122E0C68600A4C0C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00B4765122E0C68600A4C0C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00B4765022E0C68600A4C0C9 /* TransWords.app */,
+				00B4766722E0C68700A4C0C9 /* TransWordsTests.xctest */,
+				00B4767222E0C68700A4C0C9 /* TransWordsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00B4765222E0C68600A4C0C9 /* TransWords */ = {
+			isa = PBXGroup;
+			children = (
+				00021CA922F4CA8100E1B63D /* Extension */,
+				00021CA222F3497700E1B63D /* Common */,
+				00021C5522F05D4700E1B63D /* Module */,
+				00021C5122F0492900E1B63D /* Service */,
+				00B4768C22E5D02500A4C0C9 /* Model */,
+				00B4765322E0C68600A4C0C9 /* AppDelegate.swift */,
+				00021C5F22F0D23600E1B63D /* MainAssembly.swift */,
+				00B4765722E0C68600A4C0C9 /* Main.storyboard */,
+				00B4765D22E0C68700A4C0C9 /* Assets.xcassets */,
+				00B4765F22E0C68700A4C0C9 /* LaunchScreen.storyboard */,
+				00B4766222E0C68700A4C0C9 /* Info.plist */,
+				00B4765A22E0C68600A4C0C9 /* TransWords.xcdatamodeld */,
+			);
+			path = TransWords;
+			sourceTree = "<group>";
+		};
+		00B4766A22E0C68700A4C0C9 /* TransWordsTests */ = {
+			isa = PBXGroup;
+			children = (
+				00B4766B22E0C68700A4C0C9 /* TransWordsTests.swift */,
+				00B4766D22E0C68700A4C0C9 /* Info.plist */,
+			);
+			path = TransWordsTests;
+			sourceTree = "<group>";
+		};
+		00B4767522E0C68700A4C0C9 /* TransWordsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00B4767622E0C68700A4C0C9 /* TransWordsUITests.swift */,
+				00B4767822E0C68700A4C0C9 /* Info.plist */,
+			);
+			path = TransWordsUITests;
+			sourceTree = "<group>";
+		};
+		00B4768C22E5D02500A4C0C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00B476B122EBA0A200A4C0C9 /* TranslationDirection.swift */,
+				00021C7722F1643B00E1B63D /* Word.swift */,
+				00021C9122F1C2E200E1B63D /* Language.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00B476B322EBBAD200A4C0C9 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				00021CAC22F4D27800E1B63D /* LanguageEntity+CoreDataClass.swift */,
+				00021CAD22F4D27800E1B63D /* LanguageEntity+CoreDataProperties.swift */,
+				00021CAE22F4D27800E1B63D /* TranslatedWordEntity+CoreDataClass.swift */,
+				00021CAF22F4D27800E1B63D /* TranslatedWordEntity+CoreDataProperties.swift */,
+			);
+			path = CoreDataModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00B4764F22E0C68600A4C0C9 /* TransWords */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00B4767B22E0C68700A4C0C9 /* Build configuration list for PBXNativeTarget "TransWords" */;
+			buildPhases = (
+				00B4764C22E0C68600A4C0C9 /* Sources */,
+				00B4764D22E0C68600A4C0C9 /* Frameworks */,
+				00B4764E22E0C68600A4C0C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransWords;
+			productName = TransWords;
+			productReference = 00B4765022E0C68600A4C0C9 /* TransWords.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00B4766622E0C68700A4C0C9 /* TransWordsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00B4767E22E0C68700A4C0C9 /* Build configuration list for PBXNativeTarget "TransWordsTests" */;
+			buildPhases = (
+				00B4766322E0C68700A4C0C9 /* Sources */,
+				00B4766422E0C68700A4C0C9 /* Frameworks */,
+				00B4766522E0C68700A4C0C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00B4766922E0C68700A4C0C9 /* PBXTargetDependency */,
+			);
+			name = TransWordsTests;
+			productName = TransWordsTests;
+			productReference = 00B4766722E0C68700A4C0C9 /* TransWordsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00B4767122E0C68700A4C0C9 /* TransWordsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00B4768122E0C68700A4C0C9 /* Build configuration list for PBXNativeTarget "TransWordsUITests" */;
+			buildPhases = (
+				00B4766E22E0C68700A4C0C9 /* Sources */,
+				00B4766F22E0C68700A4C0C9 /* Frameworks */,
+				00B4767022E0C68700A4C0C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00B4767422E0C68700A4C0C9 /* PBXTargetDependency */,
+			);
+			name = TransWordsUITests;
+			productName = TransWordsUITests;
+			productReference = 00B4767222E0C68700A4C0C9 /* TransWordsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00B4764822E0C68600A4C0C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Dmitry Kholodilov";
+				TargetAttributes = {
+					00B4764F22E0C68600A4C0C9 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					00B4766622E0C68700A4C0C9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 00B4764F22E0C68600A4C0C9;
+					};
+					00B4767122E0C68700A4C0C9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 00B4764F22E0C68600A4C0C9;
+					};
+				};
+			};
+			buildConfigurationList = 00B4764B22E0C68600A4C0C9 /* Build configuration list for PBXProject "TransWords" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00B4764722E0C68600A4C0C9;
+			productRefGroup = 00B4765122E0C68600A4C0C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00B4764F22E0C68600A4C0C9 /* TransWords */,
+				00B4766622E0C68700A4C0C9 /* TransWordsTests */,
+				00B4767122E0C68700A4C0C9 /* TransWordsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00B4764E22E0C68600A4C0C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B4766122E0C68700A4C0C9 /* LaunchScreen.storyboard in Resources */,
+				00B4765E22E0C68700A4C0C9 /* Assets.xcassets in Resources */,
+				00B4765922E0C68600A4C0C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00B4766522E0C68700A4C0C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00B4767022E0C68700A4C0C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00B4764C22E0C68600A4C0C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B4765422E0C68600A4C0C9 /* AppDelegate.swift in Sources */,
+				00021C7D22F1967800E1B63D /* SettingsRouter.swift in Sources */,
+				00021C6722F0D6FA00E1B63D /* HistoryRouter.swift in Sources */,
+				00021C6E22F0D81100E1B63D /* HistoryRouterImpl.swift in Sources */,
+				00021CA622F349B600E1B63D /* TranslationDirectionInteractorImpl.swift in Sources */,
+				00021C6222F0D3B700E1B63D /* HistoryAssembly.swift in Sources */,
+				00021CA422F3499900E1B63D /* TranslationDirectionInteractor.swift in Sources */,
+				00021C6022F0D23600E1B63D /* MainAssembly.swift in Sources */,
+				00021C5E22F05E5D00E1B63D /* LanguageSelectionPresenter.swift in Sources */,
+				00B476B222EBA0A200A4C0C9 /* TranslationDirection.swift in Sources */,
+				00021C6C22F0D7FA00E1B63D /* HistoryPresenterImpl.swift in Sources */,
+				00021CA822F34FA900E1B63D /* LanguageGroup.swift in Sources */,
+				00021CB022F4D27800E1B63D /* LanguageEntity+CoreDataClass.swift in Sources */,
+				00B4765C22E0C68600A4C0C9 /* TransWords.xcdatamodeld in Sources */,
+				00021C8A22F1B16A00E1B63D /* LanguageSelectionInteractor.swift in Sources */,
+				00D0013722ED9DFD00A15870 /* HistoryViewController.swift in Sources */,
+				00021C5322F04A3A00E1B63D /* CoreDataService.swift in Sources */,
+				00021C8522F1971E00E1B63D /* SettingsRouterImpl.swift in Sources */,
+				00B476B022EBA00C00A4C0C9 /* TranslationDirectionServiceImpl.swift in Sources */,
+				00021C9722F2F91000E1B63D /* WordTranslationPresenter.swift in Sources */,
+				00021CB322F4D27800E1B63D /* TranslatedWordEntity+CoreDataProperties.swift in Sources */,
+				00021CB122F4D27800E1B63D /* LanguageEntity+CoreDataProperties.swift in Sources */,
+				00021C9422F1C4B400E1B63D /* TranslationDirectionService.swift in Sources */,
+				00021CAB22F4CABB00E1B63D /* Storyboard.swift in Sources */,
+				00021C9F22F2F99600E1B63D /* WordTranslationInteractorImpl.swift in Sources */,
+				00B4769A22E5D94900A4C0C9 /* YandexTranslationService.swift in Sources */,
+				00021C7022F0D82B00E1B63D /* HistoryInteractorImpl.swift in Sources */,
+				00021C7422F0E21B00E1B63D /* SettingsAssembly.swift in Sources */,
+				00021C9D22F2F97C00E1B63D /* WordTranslationPresenterImpl.swift in Sources */,
+				00021C5C22F05E3700E1B63D /* LanguageSelectionPresenterImpl.swift in Sources */,
+				00021CF422F7834400E1B63D /* UINavigationController.swift in Sources */,
+				00021C7822F1643B00E1B63D /* Word.swift in Sources */,
+				00021C9922F2F92900E1B63D /* WordTranslationInteractor.swift in Sources */,
+				00B476AC22EACC9900A4C0C9 /* WordTranslationViewController.swift in Sources */,
+				00021C8122F196E600E1B63D /* SettingsPresenterImpl.swift in Sources */,
+				00021C6A22F0D76C00E1B63D /* HistoryInteractor.swift in Sources */,
+				00021C7622F0E2D700E1B63D /* WordTranslationAssembly.swift in Sources */,
+				00B476CB22EC861000A4C0C9 /* LanguageSelectionViewController.swift in Sources */,
+				00021CB222F4D27800E1B63D /* TranslatedWordEntity+CoreDataClass.swift in Sources */,
+				00021C8E22F1B1C400E1B63D /* LanguageSelectionInteractorImpl.swift in Sources */,
+				00021CF822FA257500E1B63D /* StoryboardEnums.swift in Sources */,
+				00021C7B22F1965700E1B63D /* SettingsPresenter.swift in Sources */,
+				00021CFA22FAC29000E1B63D /* HistoryTableCell.swift in Sources */,
+				00B4769E22E886A300A4C0C9 /* YandexResponse.swift in Sources */,
+				00B476AE22EB7B1300A4C0C9 /* CoreDataServiceImpl.swift in Sources */,
+				00021C8822F1ADC800E1B63D /* LanguageSelectionAssembly.swift in Sources */,
+				00021C9222F1C2E200E1B63D /* Language.swift in Sources */,
+				00B4769822E5D8C600A4C0C9 /* TranslationService.swift in Sources */,
+				00B476C922EC2D1F00A4C0C9 /* SettingsViewController.swift in Sources */,
+				00021C6522F0D69000E1B63D /* HistoryPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00B4766322E0C68700A4C0C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B4766C22E0C68700A4C0C9 /* TransWordsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00B4766E22E0C68700A4C0C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B4767722E0C68700A4C0C9 /* TransWordsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00B4766922E0C68700A4C0C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00B4764F22E0C68600A4C0C9 /* TransWords */;
+			targetProxy = 00B4766822E0C68700A4C0C9 /* PBXContainerItemProxy */;
+		};
+		00B4767422E0C68700A4C0C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00B4764F22E0C68600A4C0C9 /* TransWords */;
+			targetProxy = 00B4767322E0C68700A4C0C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00B4765722E0C68600A4C0C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00B4765822E0C68600A4C0C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00B4765F22E0C68700A4C0C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00B4766022E0C68700A4C0C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00B4767922E0C68700A4C0C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00B4767A22E0C68700A4C0C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00B4767C22E0C68700A4C0C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59UJF42Q9E;
+				INFOPLIST_FILE = TransWords/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.kholodilov.dmitry.TransWords;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		00B4767D22E0C68700A4C0C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59UJF42Q9E;
+				INFOPLIST_FILE = TransWords/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.kholodilov.dmitry.TransWords;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		00B4767F22E0C68700A4C0C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TransWordsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.kholodilov.dmitry.TransWordsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransWords.app/TransWords";
+			};
+			name = Debug;
+		};
+		00B4768022E0C68700A4C0C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TransWordsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.kholodilov.dmitry.TransWordsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransWords.app/TransWords";
+			};
+			name = Release;
+		};
+		00B4768222E0C68700A4C0C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TransWordsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.kholodilov.dmitry.TransWordsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TransWords;
+			};
+			name = Debug;
+		};
+		00B4768322E0C68700A4C0C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TransWordsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.kholodilov.dmitry.TransWordsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TransWords;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00B4764B22E0C68600A4C0C9 /* Build configuration list for PBXProject "TransWords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00B4767922E0C68700A4C0C9 /* Debug */,
+				00B4767A22E0C68700A4C0C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00B4767B22E0C68700A4C0C9 /* Build configuration list for PBXNativeTarget "TransWords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00B4767C22E0C68700A4C0C9 /* Debug */,
+				00B4767D22E0C68700A4C0C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00B4767E22E0C68700A4C0C9 /* Build configuration list for PBXNativeTarget "TransWordsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00B4767F22E0C68700A4C0C9 /* Debug */,
+				00B4768022E0C68700A4C0C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00B4768122E0C68700A4C0C9 /* Build configuration list for PBXNativeTarget "TransWordsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00B4768222E0C68700A4C0C9 /* Debug */,
+				00B4768322E0C68700A4C0C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		00B4765A22E0C68600A4C0C9 /* TransWords.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00B4765B22E0C68600A4C0C9 /* TransWords.xcdatamodel */,
+			);
+			currentVersion = 00B4765B22E0C68600A4C0C9 /* TransWords.xcdatamodel */;
+			path = TransWords.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 00B4764822E0C68600A4C0C9 /* Project object */;
+}

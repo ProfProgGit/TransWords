@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F203" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="LanguageEntity" representedClassName="LanguageEntity" syncable="YES">
+        <attribute name="code" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="translatedWords" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TranslatedWordEntity" inverseName="translationLanguage" inverseEntity="TranslatedWordEntity" syncable="YES"/>
+        <relationship name="words" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TranslatedWordEntity" inverseName="wordLanguage" inverseEntity="TranslatedWordEntity" syncable="YES"/>
+    </entity>
+    <entity name="TranslatedWordEntity" representedClassName="TranslatedWordEntity" syncable="YES">
+        <attribute name="queried" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="translation" attributeType="String" syncable="YES"/>
+        <attribute name="word" attributeType="String" syncable="YES"/>
+        <relationship name="translationLanguage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LanguageEntity" inverseName="translatedWords" inverseEntity="LanguageEntity" syncable="YES"/>
+        <relationship name="wordLanguage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LanguageEntity" inverseName="words" inverseEntity="LanguageEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="LanguageEntity" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="TranslatedWordEntity" positionX="9" positionY="27" width="128" height="120"/>
+    </elements>
+</model>
